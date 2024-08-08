@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "C:\Users\daton\Documents\GitHub\DRO-Experiment\FinalDRO.py", line 661, in <module>
+    buttonlist.append(TimedShapeStim(win=win, name='Circle'+str(i+1),
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daton\Documents\GitHub\DRO-Experiment\FinalDRO.py", line 66, in __init__
+    super(TimedShapeStim, self).__init__(
+  File "C:\Users\daton\Documents\GitHub\DRO-Experiment\venv\Lib\site-packages\psychopy\visual\shape.py", line 547, in __init__
+    self.vertices = vertices
+    ^^^^^^^^^^^^^
+  File "C:\Users\daton\Documents\GitHub\DRO-Experiment\venv\Lib\site-packages\psychopy\visual\shape.py", line 617, in vertices
+    WindowMixin.vertices.fset(self, value)
+  File "C:\Users\daton\Documents\GitHub\DRO-Experiment\venv\Lib\site-packages\psychopy\visual\basevisual.py", line 1512, in vertices
+    self._vertices = Vertices(value, obj=self, flip=self.flip, anchor=self.anchor)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\daton\Documents\GitHub\DRO-Experiment\venv\Lib\site-packages\psychopy\layout.py", line 640, in __init__
+    assert (3 >= len(verts.shape) >= 2) and (verts.shape[-1] == 2), (
+                                             ^^^^^^^^^^^^^^^^^^^^
+AssertionError: Expected vertices to be coercible to a Nx2 or nxNx2 numpy array, not ()
